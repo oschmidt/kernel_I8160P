@@ -1,0 +1,16 @@
+HOW TO BUILD KERNEL FOR GT-I8160P_EUR_XX
+
+1. How to Build
+	- get Toolchain
+	  visit http://www.codesourcery.com/, download and install Sourcery G++ Lite 2009q3-67 toolchain for ARM EABI.
+	- Extract the toolchain & kernel source files
+	- edit Makefile of Kernel
+		edit "CROSS_COMPILE" to right toolchain path(You downloaded).
+		Ex)  CROSS_COMPILE=/opt/toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-		// check the location of toolchain
+  	
+	$ make u8500_rev00_codina_open_defconfig
+	$ make
+	
+2. Output files
+	- Kernel : Kernel/arch/arm/boot/zImage
+	- module : Kernel/drivers/*/*.ko
