@@ -53,3 +53,4 @@ obj-$(CONFIG_U5500_MBOX)	+= mbox.o mbox_channels-db5500.o
 obj-$(CONFIG_IMMERSION_TSPDRV)	+= tspdrv/
 obj-$(CONFIG_USE_DPP2601)	+= projector/
 obj-$(CONFIG_SAMSUNG_JACK)	+= sec_jack.o
+obj-$(CONFIG_PN544)		+= pn544.o
