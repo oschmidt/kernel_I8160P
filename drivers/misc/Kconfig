@@ -495,5 +495,10 @@ source "drivers/misc/shrm/Kconfig"
 source "drivers/misc/audio_io_dev/Kconfig"
 source "drivers/misc/tspdrv/Kconfig"
 source "drivers/misc/projector/Kconfig"
+config PN544
+        bool "NXP PN544 NFC Controller Driver"
+        default n
+        help
+          NXP PN544 Near Field Communication controller support.
 
 endif # MISC_DEVICES
